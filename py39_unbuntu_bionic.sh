@@ -30,7 +30,5 @@ apt install software-properties-common -y && add-apt-repository ppa:deadsnakes/p
 # install pip
 apt install curl -y && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3.9 get-pip.py
 
-deb http://launchpad.proxy.ustclug.org
-No newline at end of file
 # install tool
 apt install -y vim
