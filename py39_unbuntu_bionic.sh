@@ -23,8 +23,6 @@ touch /etc/apt/apt.conf.d/99verify-peer.conf && echo >>/etc/apt/apt.conf.d/99ver
 
 # active apt
 apt update & apt upgrade
-apt install software-properties-common -y && add-apt-repository ppa:deadsnakes/ppa -y && apt update && apt install python3.9 -y
-apt install python3.9-dev -y
 
 # install python
 apt install software-properties-common -y && add-apt-repository ppa:deadsnakes/ppa -y && apt update && apt install python3.9 -y && apt install python3.9-dev -y && apt install python3.9-distutils -y
