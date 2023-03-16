@@ -5,8 +5,6 @@ echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted univ
 echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse" >> /etc/apt/sources.list
 echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse" >> /etc/apt/sources.list
 
-cp /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-bionic.list /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-bionic.list.bak
-echo "deb https://launchpad.proxy.ustclug.org bionic main" > /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-bionic.list
 # active apt
 apt update & apt upgrade
 
