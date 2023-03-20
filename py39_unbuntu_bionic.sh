@@ -9,7 +9,7 @@ echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted
 apt update & apt upgrade
 
 # sovle issue public key
-apt install gnupg -y && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA6932366A755776
+apt install gnupg -y && apt install libgomp1 -y && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA6932366A755776
 
 # 添加python源
 if [ -e "/etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-bionic.list" ]; then
